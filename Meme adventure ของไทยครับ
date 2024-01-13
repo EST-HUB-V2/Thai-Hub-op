@@ -1,0 +1,413 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Thai Hub him >_<", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Auto Fishing",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "Auto Fish Desert",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+		local args = {
+    [1] = "Fishing1"
+}
+
+game:GetService("Players").LocalPlayer.Character.Fishing.Desert.RemoteEvent:FireServer(unpack(args))
+end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Auto Fish Lava",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+		local args = {
+    [1] = "Fishing1"
+}
+
+game:GetService("Players").LocalPlayer.Character.Fishing.Lava.RemoteEvent:FireServer(unpack(args))
+end
+	end    
+})  
+
+Tab:AddToggle({
+	Name = "Auto Fish Snow",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+		local args = {
+    [1] = "Fishing1"
+}
+
+game:GetService("Players").LocalPlayer.Character.Fishing.Snow.RemoteEvent:FireServer(unpack(args))
+end
+	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Op stat",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "Op stat",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+local args = {
+    [1] = "The World Head",
+    [2] = "Armor"
+}
+
+game:GetService("ReplicatedStorage").OtherThing.Tools:FireServer(unpack(args))
+
+local args = {
+    [1] = "Cosmic Orb",
+    [2] = "Armor"
+}
+
+game:GetService("ReplicatedStorage").OtherThing.Tools:FireServer(unpack(args))
+
+local args = {
+    [1] = "Skull Bike",
+    [2] = "Armor"
+}
+
+game:GetService("ReplicatedStorage").OtherThing.Tools:FireServer(unpack(args))
+end
+	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Teleport",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "Chad spawn",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-747.632202, 16.686327, 286.467468, 0.999930203, -1.6039861e-08, -0.0118145384, 1.61573528e-08, 1, 9.84921567e-09, 0.0118145384, -1.003942e-08, 0.999930203)
+end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Auto Farm Monkey",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-619.344421, 14.3478565, 319.154663, -0.999962687, 0, -0.00863803457, 0, 1, -0, 0.00863803457, -0, -0.999962687)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "Auto farm red ball",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-707.307495, 70.9498444, 740.039978, 0.313660234, 6.83514827e-08, 0.94953531, -3.575515e-09, 1, -7.08030399e-08, -0.94953531, 1.88130205e-08, 0.313660234)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "Auto farm boss lv200",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-753.855652, 11.6863289, 740.487488, 0.0428491421, 0, -0.999081612, -0, 1.00000012, -0, 0.999081612, 0, 0.0428491421)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "Big Head spawn",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(564.786133, 16.722784, 279.737396, 0.994854212, 0, 0.101317823, 0, 1.00000012, -0, -0.101317838, 0, 0.994854093)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "Auto farm popcat",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(750.9505, 11.6863289, 424.606964, 0.00060908898, 0, 0.999999881, 0, 1.00000012, -0, -0.999999881, 0, 0.00060908898)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "Auto farm troll",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+	    
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(505.799896, 11.6863279, 499.562622, 0.525317371, 0, 0.850906432, 0, 1.00000012, -0, -0.850906432, 0, 0.525317371)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "Auto farm magic orb",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(571.890991, 39.5637207, 504.777435, -0.973161101, -1.41757797e-08, 0.230124995, -1.7634413e-08, 1, -1.297271e-08, -0.230124995, -1.66826553e-08, -0.973161101)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "Desert spawn",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+	    
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(505.799896, 11.6863279, 499.562622, 0.525317371, 0, 0.850906432, 0, 1.00000012, -0, -0.850906432, 0, 0.525317371)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "summon cabybara",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-417.419617, 53.701664, -1212.79565, 0.935305238, -4.17769002e-07, -0.35384199, -9.39229153e-07, 1, -3.66331574e-06, 0.35384199, 3.75865716e-06, 0.935305238)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "Desert raid",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-663.361694, 8.64758778, -1341.03442, -0.205288053, -1.19911235e-07, 0.978701591, -3.50382408e-08, 1, 1.15171268e-07, -0.978701591, -1.06486944e-08, -0.205288053)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "Auto farm Getoka",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-797.43573, 11.8511324, -1878.91113, -0.599142969, 4.26780389e-08, -0.800642073, -1.78277428e-08, 1, 6.6645768e-08, 0.800642073, 5.42039835e-08, -0.599142969)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "Desert fishing",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(860.335327, 8.64758778, -857.974304, -0.74550277, -3.07364232e-08, -0.666502535, 8.73550066e-10, 1, -4.70930814e-08, 0.666502535, -3.56902454e-08, -0.74550277)game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(860.335327, 8.64758778, -857.974304, -0.74550277, -3.07364232e-08, -0.666502535, 8.73550066e-10, 1, -4.70930814e-08, 0.666502535, -3.56902454e-08, -0.74550277)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "Lava spawn",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2209.41602, 21.0504608, -357.403015, -0.950217366, 7.13195902e-08, -0.311587721, 6.45516067e-08, 1, 3.20344107e-08, 0.311587721, 1.03261648e-08, -0.950217366)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "Lava raid",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3071.01611, 69.7638092, -79.4877396, -0.937673986, 0, -0.347516358, 0, 1.00000012, -0, 0.347516358, -0, -0.937673986)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "summon Bozai",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3479.43799, 16.1793861, -1080.48108, -0.998035491, 0, 0.0626522303, 0, 1.00000012, -0, -0.0626522303, 0, -0.998035491)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "Lava fishing",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3797.6665, 16.6272793, 572.192566, 0.800493956, 0, 0.599340916, 0, 1, -0, -0.599340975, 0, 0.800493836)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "Snow spawn",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2435.31519, 16.505455, -374.344574, -0.155854702, 0, 0.987780035, 0, 1.00000012, -0, -0.987780035, 0, -0.155854702)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "cave snow",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3244.8418, 16.1995773, -588.028687, 0.7649858, 0, 0.644047141, 0, 1, -0, -0.644047141, 0, 0.7649858)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "Snow fishing",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3066.22339, 18.2189693, 299.688019, -0.125948563, 0, 0.99203676, 0, 1, -0, -0.99203676, 0, -0.125948563)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "pray",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+	    
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3516.08984, 392.927612, -643.962158, -0.185307115, 0, -0.982680678, 0, 1, -0, 0.982680678, -0, -0.185307115)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "room geto",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5396.13965, 2255.31885, -4333.64209, -0.00305216736, -6.50231726e-08, -0.999995351, 3.18778986e-14, 1, -6.50234711e-08, 0.999995351, -1.98494401e-10, -0.00305216736)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "room Bozai",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8930.52734, 1751.35925, -3040.10645, -0.0294896867, 0, -0.999565065, 0, 1.00000012, -0, 0.999565184, -0, -0.029489683)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "room cabycara",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5377.62451, 1750.8092, 620.379944, 0.158974066, 0, -0.987282813, -0, 1.00000012, -0, 0.987282813, 0, 0.158974066)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "room railgun",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3606.9585, 1253.15808, 10501.5352, -0.998659492, 0, -0.0517612211, 0, 1, -0, 0.0517612211, -0, -0.998659492)
+end
+	end
+})
+
+Tab:AddToggle({
+	Name = "room dagon",
+	Default = false,
+	Callback = function(Value)
+		_G.Hum = Value
+		while _G.Hum do wait()
+		
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1459.02795, 21988.7949, 59838.9922, 0.145562157, 0, -0.989349127, -0, 1, -0, 0.989349127, 0, 0.145562157)
+end
+	end
+})
+
+OrionLib:Init()
